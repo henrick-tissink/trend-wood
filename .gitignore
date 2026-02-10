@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
 
 # Next.js
 .next/
@@ -8,6 +11,9 @@ out/
 # Build
 dist/
 build/
+
+# Testing
+/coverage
 
 # Environment
 .env
@@ -29,7 +35,13 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Large asset folders (originals - copies in web/public)
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Large asset folders (originals - not needed in repo)
 Balcoane/
 Casa Utu/
 Masa si banca/
