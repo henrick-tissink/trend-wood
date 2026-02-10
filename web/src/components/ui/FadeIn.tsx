@@ -2,6 +2,7 @@
 
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef, ReactNode } from "react";
+import { ease, duration } from "@/lib/animations";
 
 interface FadeInProps {
   children: ReactNode;
@@ -9,6 +10,7 @@ interface FadeInProps {
   delay?: number;
   direction?: "up" | "down" | "left" | "right" | "none";
   duration?: number;
+  distance?: number;
   once?: boolean;
 }
 
@@ -17,17 +19,18 @@ export function FadeIn({
   className,
   delay = 0,
   direction = "up",
-  duration = 0.6,
+  duration: customDuration,
+  distance = 30,
   once = true,
 }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, margin: "-50px" });
+  const isInView = useInView(ref, { once, margin: "-80px" });
 
   const directionOffset = {
-    up: { y: 24 },
-    down: { y: -24 },
-    left: { x: 24 },
-    right: { x: -24 },
+    up: { y: distance },
+    down: { y: -distance },
+    left: { x: distance },
+    right: { x: -distance },
     none: {},
   };
 
@@ -41,9 +44,9 @@ export function FadeIn({
       x: 0,
       y: 0,
       transition: {
-        duration,
+        duration: customDuration ?? duration.default,
         delay,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: ease.smooth,
       },
     },
   };
@@ -71,14 +74,14 @@ interface StaggerChildrenProps {
 export function StaggerChildren({
   children,
   className,
-  staggerDelay = 0.1,
+  staggerDelay = 0.08,
   once = true,
 }: StaggerChildrenProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, margin: "-50px" });
+  const isInView = useInView(ref, { once, margin: "-80px" });
 
   const containerVariants: Variants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
@@ -88,13 +91,13 @@ export function StaggerChildren({
   };
 
   const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 16 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.25, 0.1, 0.25, 1],
+        duration: duration.default,
+        ease: ease.smooth,
       },
     },
   };

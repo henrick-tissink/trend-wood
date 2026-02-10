@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "viewAll": "Alle anzeigen",
+    "viewProject": "Projekt ansehen",
+    "backToPortfolio": "Zurück zum Portfolio",
+    "learnMore": "Mehr erfahren",
+    "getInTouch": "Kontaktieren Sie uns",
+    "callUs": "Rufen Sie uns an",
+    "sendMessage": "Nachricht senden",
+    "discoverMore": "Mehr entdecken",
+    "seeOurWork": "Unsere Arbeiten ansehen",
+    "startProject": "Projekt starten",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "footer": {
+    "description": "Massivholzmöbel, gefertigt mit siebenbürgischer Präzision und Leidenschaft für Details. Jedes Stück ist einzigartig.",
+    "navigation": "Navigation",
+    "contact": "Kontakt",
+    "location": "Ciolpani, Ilfov, Rumänien",
+    "whatsapp": "WhatsApp",
+    "copyright": "© {year} Trend Wood Consult. Alle Rechte vorbehalten.",
+    "madeWith": "Mit Leidenschaft in Rumänien gefertigt"
+  },
+  "form": {
+    "name": "Ihr Name",
+    "namePlaceholder": "Max Mustermann",
+    "email": "E-Mail",
+    "emailPlaceholder": "email@beispiel.de",
+    "phone": "Telefon (optional)",
+    "phonePlaceholder": "+40 7XX XXX XXX",
+    "message": "Erzählen Sie uns von Ihrem Projekt",
+    "messagePlaceholder": "Beschreiben Sie kurz Ihr Projekt...",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet...",
+    "required": "*",
+    "successTitle": "Vielen Dank!",
+    "successMessage": "Wir melden uns bald bei Ihnen.",
+    "errorMessage": "Etwas ist schief gelaufen. Nochmal versuchen?",
+    "validation": {
+      "nameMin": "Name muss mindestens 2 Zeichen haben",
+      "emailInvalid": "Ungültige E-Mail-Adresse",
+      "messageMin": "Nachricht muss mindestens 10 Zeichen haben"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Holz nimmt die Form Ihrer Vision an",
+      "subtitle": "Wir fertigen Massivholzmöbel mit siebenbürgischer Präzision und Leidenschaft für Details, die Generationen überdauern."
+    },
+    "values": {
+      "craftsmanship": {
+        "title": "Authentische Handwerkskunst",
+        "description": "Jedes Stück wird von Hand geschnitzt, mit Techniken, die über Generationen vererbt und perfektioniert wurden."
+      },
+      "materials": {
+        "title": "Premium-Materialien",
+        "description": "Wir wählen nur das hochwertigste Holz aus den Wäldern Siebenbürgens."
+      },
+      "legacy": {
+        "title": "Langlebigkeit",
+        "description": "Wir bauen Möbel, die an zukünftige Generationen vererbt werden."
+      }
+    },
+    "featuredWork": "Aktuelle Arbeiten",
+    "testimonialSection": "Was Kunden sagen"
+  },
+  "about": {
+    "seo": {
+      "title": "Über Uns",
+      "description": "Die Geschichte von Trend Wood - Siebenbürgische Handwerkskunst bei Massivholzmöbeln."
+    },
+    "hero": {
+      "title": "Unsere Geschichte",
+      "subtitle": "Siebenbürgische Handwerkskunst seit über zwei Jahrzehnten"
+    },
+    "story": {
+      "title": "Leidenschaft für Holz",
+      "content": "Aus dem Herzen Siebenbürgens bringen wir Möbel in Ihre Häuser, die die Wärme der Wälder und die Meisterschaft geschickter Hände tragen."
+    },
+    "philosophy": {
+      "title": "Unsere Philosophie",
+      "content": "Wir glauben, dass echte Möbel nicht gekauft, sondern vererbt werden. Deshalb ist jedes Stück, das wir erschaffen, so konzipiert, dass es den Test der Zeit besteht."
+    }
+  },
+  "services": {
+    "seo": {
+      "title": "Dienstleistungen",
+      "description": "Komplette Massivholzmöbel-Dienstleistungen - Treppen, Möbel, Böden und Restaurierungen."
+    },
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Vom Konzept zur Fertigstellung"
+    },
+    "list": {
+      "stairs": {
+        "title": "Holztreppen",
+        "description": "Innen- und Außentreppen aus Massivholz, individuell entworfen und gefertigt."
+      },
+      "furniture": {
+        "title": "Maßgefertigte Möbel",
+        "description": "Tische, Schränke, Betten und alle Möbelstücke, speziell für Ihren Raum entworfen."
+      },
+      "flooring": {
+        "title": "Bodenbeläge",
+        "description": "Massivholzböden und Parkett, mit Präzision verlegt für maximale Haltbarkeit."
+      },
+      "restoration": {
+        "title": "Restaurierungen",
+        "description": "Wir erwecken alte Möbelstücke zu neuem Leben und bewahren ihren Charakter und ihre Geschichte."
+      }
+    },
+    "process": {
+      "title": "Unser Prozess",
+      "steps": {
+        "consultation": {
+          "title": "Beratung",
+          "description": "Wir besprechen Ihre Vision und Bedürfnisse."
+        },
+        "design": {
+          "title": "Entwurf",
+          "description": "Wir erstellen das Design und wählen die richtigen Materialien."
+        },
+        "crafting": {
+          "title": "Fertigung",
+          "description": "Wir verwandeln Holz mit Meisterschaft in Möbel."
+        },
+        "delivery": {
+          "title": "Lieferung",
+          "description": "Wir installieren und finalisieren vor Ort."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "seo": {
+      "title": "Portfolio",
+      "description": "Projektgalerie - Treppen, Möbel und Massivholzarbeiten von Trend Wood."
+    },
+    "hero": {
+      "title": "Portfolio",
+      "subtitle": "Eine Auswahl unserer aktuellen Arbeiten"
+    },
+    "project": {
+      "woodType": "Holzart",
+      "category": "Kategorie",
+      "location": "Standort",
+      "year": "Jahr",
+      "details": "Projektdetails",
+      "gallery": "Galerie",
+      "interestedTitle": "Gefällt Ihnen, was Sie sehen?",
+      "interestedText": "Kontaktieren Sie uns, um Ihr Projekt zu besprechen.",
+      "requestQuote": "Angebot anfordern"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie Trend Wood für maßgefertigte Massivholzmöbel."
+    },
+    "hero": {
+      "title": "Kontakt",
+      "subtitle": "Lassen Sie uns über Ihr Projekt sprechen"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "location": "Standort",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Montag - Freitag: 08:00 - 18:00"
+    }
+  },
+  "meta": {
+    "siteName": "Trend Wood Consult",
+    "defaultDescription": "Maßgefertigte Massivholzmöbel. Treppen, Möbel, Böden und Restaurierungen in Rumänien."
+  }
+}

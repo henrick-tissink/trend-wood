@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "common": {
+    "viewAll": "View all",
+    "viewProject": "View project",
+    "backToPortfolio": "Back to portfolio",
+    "learnMore": "Learn more",
+    "getInTouch": "Get in touch",
+    "callUs": "Call us",
+    "sendMessage": "Send message",
+    "discoverMore": "Discover more",
+    "seeOurWork": "See our work",
+    "startProject": "Start a project",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "description": "Solid wood furniture, crafted with Transylvanian rigor and passion for details. Each piece is unique.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "location": "Ciolpani, Ilfov, Romania",
+    "whatsapp": "WhatsApp",
+    "copyright": "© {year} Trend Wood Consult. All rights reserved.",
+    "madeWith": "Made with passion in Romania"
+  },
+  "form": {
+    "name": "Your name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "email@example.com",
+    "phone": "Phone (optional)",
+    "phonePlaceholder": "+40 7XX XXX XXX",
+    "message": "Tell us about your project",
+    "messagePlaceholder": "Briefly describe your project...",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "required": "*",
+    "successTitle": "Thank you!",
+    "successMessage": "We'll get back to you soon.",
+    "errorMessage": "Something went wrong. Try again?",
+    "validation": {
+      "nameMin": "Name must be at least 2 characters",
+      "emailInvalid": "Invalid email address",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Wood takes the shape of your vision",
+      "subtitle": "We create solid wood furniture with Transylvanian precision and passion for details that last generations."
+    },
+    "values": {
+      "craftsmanship": {
+        "title": "Authentic Craftsmanship",
+        "description": "Each piece is hand-carved using techniques inherited and perfected over generations."
+      },
+      "materials": {
+        "title": "Premium Materials",
+        "description": "We select only the highest quality wood from the forests of Transylvania."
+      },
+      "legacy": {
+        "title": "Durability",
+        "description": "We build furniture that will be inherited by future generations."
+      }
+    },
+    "featuredWork": "Recent Work",
+    "testimonialSection": "What clients say"
+  },
+  "about": {
+    "seo": {
+      "title": "About Us",
+      "description": "The Trend Wood story - Transylvanian craftsmanship in solid wood furniture."
+    },
+    "hero": {
+      "title": "Our Story",
+      "subtitle": "Transylvanian craftsmanship for over two decades"
+    },
+    "story": {
+      "title": "Passion for Wood",
+      "content": "From the heart of Transylvania, we bring furniture to your homes that carries the warmth of forests and the mastery of skilled hands."
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "content": "We believe that true furniture is not bought, it is inherited. That's why every piece we create is designed to stand the test of time."
+    }
+  },
+  "services": {
+    "seo": {
+      "title": "Services",
+      "description": "Complete solid wood furniture services - stairs, furniture, flooring and restorations."
+    },
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "From concept to completion"
+    },
+    "list": {
+      "stairs": {
+        "title": "Wooden Stairs",
+        "description": "Interior and exterior solid wood stairs, custom designed and crafted."
+      },
+      "furniture": {
+        "title": "Custom Furniture",
+        "description": "Tables, wardrobes, beds and any furniture piece designed specifically for your space."
+      },
+      "flooring": {
+        "title": "Flooring",
+        "description": "Solid wood flooring and parquet, installed with precision for maximum durability."
+      },
+      "restoration": {
+        "title": "Restorations",
+        "description": "We bring old furniture pieces back to life, preserving their character and story."
+      }
+    },
+    "process": {
+      "title": "Our Process",
+      "steps": {
+        "consultation": {
+          "title": "Consultation",
+          "description": "We discuss your vision and needs."
+        },
+        "design": {
+          "title": "Design",
+          "description": "We create the design and select the right materials."
+        },
+        "crafting": {
+          "title": "Crafting",
+          "description": "We transform wood into furniture with mastery."
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "We install and finish on site."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "seo": {
+      "title": "Portfolio",
+      "description": "Project gallery - stairs, furniture and solid wood works by Trend Wood."
+    },
+    "hero": {
+      "title": "Portfolio",
+      "subtitle": "A selection of our recent work"
+    },
+    "project": {
+      "woodType": "Wood type",
+      "category": "Category",
+      "location": "Location",
+      "year": "Year",
+      "details": "Project details",
+      "gallery": "Gallery",
+      "interestedTitle": "Like what you see?",
+      "interestedText": "Contact us to discuss your project.",
+      "requestQuote": "Request a quote"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact",
+      "description": "Contact Trend Wood for custom solid wood furniture."
+    },
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Let's discuss your project"
+    },
+    "info": {
+      "title": "Contact information",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "hours": "Hours",
+      "hoursValue": "Monday - Friday: 08:00 - 18:00"
+    }
+  },
+  "meta": {
+    "siteName": "Trend Wood Consult",
+    "defaultDescription": "Custom solid wood furniture. Stairs, furniture, flooring and restorations in Romania."
+  }
+}

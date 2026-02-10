@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre Noi",
+    "services": "Servicii",
+    "portfolio": "Portofoliu",
+    "contact": "Contact"
+  },
+  "common": {
+    "viewAll": "Vezi toate",
+    "viewProject": "Vezi proiect",
+    "backToPortfolio": "Înapoi la portofoliu",
+    "learnMore": "Află mai multe",
+    "getInTouch": "Contactează-ne",
+    "callUs": "Sună-ne",
+    "sendMessage": "Trimite mesaj",
+    "discoverMore": "Descoperă mai multe",
+    "seeOurWork": "Vezi lucrările noastre",
+    "startProject": "Începe proiect",
+    "openMenu": "Deschide meniu",
+    "closeMenu": "Închide meniu"
+  },
+  "footer": {
+    "description": "Mobilier din lemn masiv, realizat cu rigoare transilvăneană și pasiune pentru detalii. Fiecare piesă este unică.",
+    "navigation": "Navigare",
+    "contact": "Contact",
+    "location": "Ciolpani, Ilfov",
+    "whatsapp": "WhatsApp",
+    "copyright": "© {year} Trend Wood Consult. Toate drepturile rezervate.",
+    "madeWith": "Realizat cu pasiune în România"
+  },
+  "form": {
+    "name": "Numele dumneavoastră",
+    "namePlaceholder": "Ion Popescu",
+    "email": "Email",
+    "emailPlaceholder": "email@exemplu.ro",
+    "phone": "Telefon (opțional)",
+    "phonePlaceholder": "07XX XXX XXX",
+    "message": "Spuneți-ne despre proiect",
+    "messagePlaceholder": "Descrieți pe scurt proiectul dumneavoastră...",
+    "submit": "Trimite mesajul",
+    "submitting": "Un moment...",
+    "required": "*",
+    "successTitle": "Mulțumim!",
+    "successMessage": "Revenim în curând.",
+    "errorMessage": "Ceva n-a mers. Încercați din nou?",
+    "validation": {
+      "nameMin": "Numele trebuie să aibă cel puțin 2 caractere",
+      "emailInvalid": "Adresă de email invalidă",
+      "messageMin": "Mesajul trebuie să aibă cel puțin 10 caractere"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Lemnul ia forma viziunii tale",
+      "subtitle": "Creăm mobilier din lemn masiv cu precizie transilvăneană și pasiune pentru detalii ce durează generații."
+    },
+    "values": {
+      "craftsmanship": {
+        "title": "Meșteșug Autentic",
+        "description": "Fiecare piesă este sculptată manual, cu tehnici moștenite și perfecționate de-a lungul generațiilor."
+      },
+      "materials": {
+        "title": "Materiale Premium",
+        "description": "Selectăm doar lemn de cea mai înaltă calitate din pădurile Transilvaniei."
+      },
+      "legacy": {
+        "title": "Durabilitate",
+        "description": "Construim mobilier care va fi moștenit de generațiile viitoare."
+      }
+    },
+    "featuredWork": "Lucrări Recente",
+    "testimonialSection": "Ce spun clienții"
+  },
+  "about": {
+    "seo": {
+      "title": "Despre Noi",
+      "description": "Povestea Trend Wood - meșteșug transilvănean în mobilier din lemn masiv."
+    },
+    "hero": {
+      "title": "Povestea Noastră",
+      "subtitle": "Meșteșug transilvănean de peste două decenii"
+    },
+    "story": {
+      "title": "Pasiune pentru Lemn",
+      "content": "Din inima Transilvaniei, aducem în casele dumneavoastră mobilier care poartă în el căldura pădurilor și măiestria mâinilor pricepute."
+    },
+    "philosophy": {
+      "title": "Filozofia Noastră",
+      "content": "Credem că mobilierul adevărat nu se cumpără, se moștenește. De aceea, fiecare piesă pe care o creăm este gândită să reziste timpului."
+    }
+  },
+  "services": {
+    "seo": {
+      "title": "Servicii",
+      "description": "Servicii complete de mobilier din lemn masiv - scări, mobilier, pardoseli și restaurări."
+    },
+    "hero": {
+      "title": "Serviciile Noastre",
+      "subtitle": "De la concept la realizare"
+    },
+    "list": {
+      "stairs": {
+        "title": "Scări din Lemn",
+        "description": "Scări interioare și exterioare din lemn masiv, proiectate și executate la comandă."
+      },
+      "furniture": {
+        "title": "Mobilier la Comandă",
+        "description": "Mese, dulapuri, paturi și orice piesă de mobilier gândită special pentru spațiul dumneavoastră."
+      },
+      "flooring": {
+        "title": "Pardoseli",
+        "description": "Pardoseli din lemn masiv și parchet, montate cu precizie pentru durabilitate maximă."
+      },
+      "restoration": {
+        "title": "Restaurări",
+        "description": "Readucem la viață piese de mobilier vechi, păstrând caracterul și povestea lor."
+      }
+    },
+    "process": {
+      "title": "Procesul Nostru",
+      "steps": {
+        "consultation": {
+          "title": "Consultație",
+          "description": "Discutăm despre viziunea și nevoile dumneavoastră."
+        },
+        "design": {
+          "title": "Proiectare",
+          "description": "Creăm designul și alegem materialele potrivite."
+        },
+        "crafting": {
+          "title": "Execuție",
+          "description": "Transformăm lemnul în mobilier cu măiestrie."
+        },
+        "delivery": {
+          "title": "Livrare",
+          "description": "Instalăm și finisăm la fața locului."
+        }
+      }
+    }
+  },
+  "portfolio": {
+    "seo": {
+      "title": "Portofoliu",
+      "description": "Galerie de proiecte - scări, mobilier și lucrări din lemn masiv realizate de Trend Wood."
+    },
+    "hero": {
+      "title": "Portofoliu",
+      "subtitle": "O selecție din lucrările noastre recente"
+    },
+    "project": {
+      "woodType": "Tip lemn",
+      "category": "Categorie",
+      "location": "Locație",
+      "year": "An",
+      "details": "Detalii proiect",
+      "gallery": "Galerie",
+      "interestedTitle": "Vă place ce vedeți?",
+      "interestedText": "Contactați-ne pentru a discuta proiectul dumneavoastră.",
+      "requestQuote": "Solicitați o ofertă"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact",
+      "description": "Contactați Trend Wood pentru mobilier din lemn masiv la comandă."
+    },
+    "hero": {
+      "title": "Contact",
+      "subtitle": "Să discutăm despre proiectul dumneavoastră"
+    },
+    "info": {
+      "title": "Informații de contact",
+      "phone": "Telefon",
+      "email": "Email",
+      "location": "Locație",
+      "hours": "Program",
+      "hoursValue": "Luni - Vineri: 08:00 - 18:00"
+    }
+  },
+  "meta": {
+    "siteName": "Trend Wood Consult",
+    "defaultDescription": "Mobilier din lemn masiv realizat la comandă. Scări, mobilier, pardoseli și restaurări în România."
+  }
+}

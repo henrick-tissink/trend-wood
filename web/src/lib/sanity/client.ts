@@ -1,0 +1,21 @@
+import { createClient } from 'next-sanity'
+
+export const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  apiVersion: '2024-01-01',
+  useCdn: process.env.NODE_ENV === 'production',
+})
+
+// Client with authentication for drafts/preview
+export const previewClient = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  apiVersion: '2024-01-01',
+  useCdn: false,
+  token: process.env.SANITY_API_READ_TOKEN,
+})
+
+export function getClient(preview = false) {
+  return preview ? previewClient : client
+}
