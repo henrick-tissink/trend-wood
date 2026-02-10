@@ -22,7 +22,7 @@ const config: Config = {
         hover: "#F5F3EE",
       },
       fontFamily: {
-        display: ["var(--font-cormorant)", "serif"],
+        display: ["var(--font-playfair)", "serif"],
         body: ["var(--font-source-sans)", "sans-serif"],
       },
       fontSize: {

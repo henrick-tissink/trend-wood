@@ -1,9 +1,9 @@
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 
-export const cormorant = Cormorant_Garamond({
+export const playfair = Playfair_Display({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-cormorant",
+  variable: "--font-playfair",
   display: "swap",
 });
 

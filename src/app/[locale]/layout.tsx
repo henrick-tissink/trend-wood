@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
-import { cormorant, sourceSans } from '@/lib/fonts'
+import { playfair, sourceSans } from '@/lib/fonts'
 import { locales, type Locale } from '@/lib/i18n/config'
 import '../globals.css'
 
@@ -67,7 +67,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${sourceSans.variable}`}>
+    <html lang={locale} className={`${playfair.variable} ${sourceSans.variable}`}>
       <body className="font-body text-charcoal bg-cream antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}

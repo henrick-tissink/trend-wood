@@ -61,7 +61,7 @@ export default async function Home({ params }: Props) {
             </FadeIn>
 
             <FadeIn delay={0.3} duration={0.8}>
-              <h1 className="font-display text-hero text-cream max-w-4xl mx-auto text-balance">
+              <h1 className="font-display font-semibold text-hero text-cream max-w-4xl mx-auto text-balance">
                 {t('hero.title')}
               </h1>
             </FadeIn>
