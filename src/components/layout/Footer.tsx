@@ -118,7 +118,7 @@ export function Footer({ locale = 'ro' }: FooterProps) {
                     className="text-cream/60 hover:text-cream transition-colors duration-fast flex items-center gap-2"
                   >
                     <svg
-                      className="w-4 h-4"
+                      className="w-4 h-4 shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -141,7 +141,7 @@ export function Footer({ locale = 'ro' }: FooterProps) {
                     className="text-cream/60 hover:text-cream transition-colors duration-fast flex items-center gap-2"
                   >
                     <svg
-                      className="w-4 h-4"
+                      className="w-4 h-4 shrink-0"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -156,7 +156,7 @@ export function Footer({ locale = 'ro' }: FooterProps) {
                     className="text-cream/60 hover:text-cream transition-colors duration-fast flex items-center gap-2"
                   >
                     <svg
-                      className="w-4 h-4"
+                      className="w-4 h-4 shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -165,7 +165,7 @@ export function Footer({ locale = 'ro' }: FooterProps) {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={1.5}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                       />
                     </svg>
                     trendwoodconsult@gmail.com
@@ -173,7 +173,7 @@ export function Footer({ locale = 'ro' }: FooterProps) {
                 </li>
                 <li className="text-cream/40 flex items-center gap-2 pt-2">
                   <svg
-                    className="w-4 h-4"
+                    className="w-4 h-4 shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
