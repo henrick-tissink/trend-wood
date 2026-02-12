@@ -69,7 +69,7 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
             <Link
               href="/"
               className={cn(
-                'relative transition-all',
+                'relative flex-shrink-0 overflow-hidden transition-all',
                 scrolled ? 'duration-fast' : 'duration-medium',
                 scrolled
                   ? 'h-10 w-28 md:h-12 md:w-36'
