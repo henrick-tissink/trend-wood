@@ -74,10 +74,10 @@ export async function AboutPage({ locale }: Props) {
                   <FadeIn delay={0.2}>
                     <p>
                       {locale === 'ro'
-                        ? 'Este rigoarea transilvăneană împletită cu o pasiune care nu acceptă „așa e și așa rămâne".'
+                        ? 'Este rigoarea științei împletită cu pasiune, care nu acceptă „merge și așa".'
                         : locale === 'en'
-                        ? 'It is Transylvanian rigor intertwined with a passion that does not accept "that\'s how it is and that\'s how it stays".'
-                        : 'Es ist siebenbürgische Strenge, verflochten mit einer Leidenschaft, die kein "so ist es und so bleibt es" akzeptiert.'
+                        ? 'It is the rigor of science intertwined with passion, which does not accept "good enough".'
+                        : 'Es ist die Strenge der Wissenschaft, verflochten mit Leidenschaft, die kein "gut genug" akzeptiert.'
                       }
                     </p>
                   </FadeIn>
@@ -110,10 +110,10 @@ export async function AboutPage({ locale }: Props) {
               <FadeIn delay={0.1}>
                 <blockquote className="font-display text-quote text-cream/90 mb-12 text-balance">
                   &bdquo;{locale === 'ro'
-                    ? 'Nu ne lăudăm cu viteza de execuție (se știe că ardelenii sunt ceva mai domoali, dar în Ardeal nimic nu se face de mântuială) — știm că lucrurile bune cer timp, răbdare și o mână care respectă lemnul.'
+                    ? 'Știm că obiectele care trec proba timpului se nasc cu răbdare, migală și o mână care ascultă povestea lemnului. Poate că suntem mai așezați, dar la noi nimic nu se face de mântuială.'
                     : locale === 'en'
-                    ? "We don't boast about execution speed (it's known that Transylvanians are a bit more laid-back, but in Transylvania nothing is done carelessly) — we know that good things take time, patience, and a hand that respects the wood."
-                    : 'Wir prahlen nicht mit der Ausführungsgeschwindigkeit (es ist bekannt, dass Siebenbürger etwas gemächlicher sind, aber in Siebenbürgen wird nichts nachlässig gemacht) — wir wissen, dass gute Dinge Zeit, Geduld und eine Hand brauchen, die das Holz respektiert.'
+                    ? 'We know that objects which stand the test of time are born with patience, care, and a hand that listens to the story of the wood. Perhaps we are more settled, but nothing is done carelessly here.'
+                    : 'Wir wissen, dass Gegenstände, die den Test der Zeit bestehen, mit Geduld, Sorgfalt und einer Hand geboren werden, die der Geschichte des Holzes zuhört. Vielleicht sind wir ruhiger, aber bei uns wird nichts nachlässig gemacht.'
                   }&rdquo;
                 </blockquote>
               </FadeIn>
@@ -156,10 +156,10 @@ export async function AboutPage({ locale }: Props) {
                   <FadeIn delay={0.1}>
                     <p>
                       {locale === 'ro'
-                        ? 'Sunt dulgheri care taie lemnul și dulgheri care îl simt. La Trend Wood, alegem fiecare scândură, îi înțelegem nodurile și îi respectăm fibra.'
+                        ? 'Unii doar taie lemnul; noi îl simțim sub degete. La Trend Wood, fiecare nod este o semnătură a naturii pe care o respectăm, alegând cu grijă scândura care va deveni parte din casa ta.'
                         : locale === 'en'
-                        ? 'There are carpenters who cut wood and carpenters who feel it. At Trend Wood, we choose each board, understand its knots and respect its grain.'
-                        : 'Es gibt Zimmerleute, die Holz schneiden, und Zimmerleute, die es fühlen. Bei Trend Wood wählen wir jedes Brett aus, verstehen seine Äste und respektieren seine Maserung.'
+                        ? 'Some just cut the wood; we feel it under our fingers. At Trend Wood, each knot is a signature of nature that we respect, carefully choosing the board that will become part of your home.'
+                        : 'Manche schneiden nur das Holz; wir fühlen es unter unseren Fingern. Bei Trend Wood ist jeder Ast eine Signatur der Natur, die wir respektieren, und wählen sorgfältig das Brett, das Teil Ihres Hauses wird.'
                       }
                     </p>
                   </FadeIn>
@@ -176,10 +176,10 @@ export async function AboutPage({ locale }: Props) {
                   <FadeIn delay={0.2}>
                     <p className="font-display text-charcoal text-h3">
                       {locale === 'ro'
-                        ? 'Aici, lemnul primește un nume: al dumneavoastră.'
+                        ? 'Aici transformăm materia primă în piesa dumneavoastră unică.'
                         : locale === 'en'
-                        ? 'Here, wood gets a name: yours.'
-                        : 'Hier bekommt Holz einen Namen: Ihren.'
+                        ? 'Here we transform raw material into your unique piece.'
+                        : 'Hier verwandeln wir Rohmaterial in Ihr einzigartiges Stück.'
                       }
                     </p>
                   </FadeIn>
@@ -206,10 +206,10 @@ export async function AboutPage({ locale }: Props) {
               <FadeIn delay={0.1}>
                 <p className="text-cream/70 text-body-lg mb-12">
                   {locale === 'ro'
-                    ? 'Fiecare proiect este o poveste unică. Spuneți-ne pe a dumneavoastră.'
+                    ? 'Fiecare proiect este personalizat. Transformați povestea dumneavoastră într-un proiect unic, alături de noi.'
                     : locale === 'en'
-                    ? 'Every project is a unique story. Tell us yours.'
-                    : 'Jedes Projekt ist eine einzigartige Geschichte. Erzählen Sie uns Ihre.'
+                    ? 'Every project is personalized. Transform your story into a unique project, together with us.'
+                    : 'Jedes Projekt ist personalisiert. Verwandeln Sie Ihre Geschichte in ein einzigartiges Projekt, gemeinsam mit uns.'
                   }
                 </p>
               </FadeIn>

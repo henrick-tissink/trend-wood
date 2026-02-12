@@ -83,16 +83,16 @@ export async function ContactPage({ locale }: Props) {
                         </h3>
                         <div className="space-y-1">
                           <a
-                            href="tel:+40724533675"
-                            className="block text-stone text-body-lg hover:text-forest transition-colors duration-fast"
-                          >
-                            0724 533 675
-                          </a>
-                          <a
                             href="tel:+40731491811"
                             className="block text-stone text-body-lg hover:text-forest transition-colors duration-fast"
                           >
-                            0731 491 811
+                            0731 491 811 - Utu
+                          </a>
+                          <a
+                            href="tel:+40724533675"
+                            className="block text-stone text-body-lg hover:text-forest transition-colors duration-fast"
+                          >
+                            0724 533 675 - Ioana
                           </a>
                         </div>
                       </div>

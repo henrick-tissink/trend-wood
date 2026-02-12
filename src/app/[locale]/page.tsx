@@ -49,7 +49,7 @@ export default async function Home({ params }: Props) {
 
           <Container className="relative z-10 text-center">
             <FadeIn duration={1}>
-              <div className="relative w-[280px] h-[140px] sm:w-[400px] sm:h-[200px] md:w-[500px] md:h-[250px] lg:w-[600px] lg:h-[300px] mx-auto mb-8 md:mb-12">
+              <div className="relative w-[320px] h-[160px] sm:w-[480px] sm:h-[240px] md:w-[600px] md:h-[300px] lg:w-[720px] lg:h-[360px] mx-auto mt-8 md:mt-12 mb-8 md:mb-12">
                 <Image
                   src="/images/logo.png"
                   alt="Trend Wood - Simte Lemnul - estd 2020"
@@ -109,7 +109,7 @@ export default async function Home({ params }: Props) {
               <FadeIn>
                 <blockquote className="font-display text-quote text-charcoal text-balance">
                   &bdquo;{locale === 'ro'
-                    ? 'Sunt dulgheri care taie lemnul și dulgheri care îl simt.'
+                    ? 'Există tâmplari care taie lemnul și tâmplari care îl simt.'
                     : locale === 'en'
                     ? 'There are carpenters who cut wood and carpenters who feel it.'
                     : 'Es gibt Zimmerleute, die Holz schneiden, und Zimmerleute, die es fühlen.'
@@ -119,7 +119,7 @@ export default async function Home({ params }: Props) {
               <FadeIn delay={0.15}>
                 <p className="mt-10 text-body-lg text-stone max-w-2xl mx-auto">
                   {locale === 'ro'
-                    ? 'La Trend Wood, alegem fiecare scândură, îi înțelegem nodurile și îi respectăm fibra. Rezultatul? Lucrări care nu seamănă cu nimic de pe piață.'
+                    ? 'Aici, la Trend Wood, alegem fiecare scândură, îi înțelegem nodurile și îi respectăm fibra. Rezultatul? Lucrări unicat, pentru fiecare Client în parte.'
                     : locale === 'en'
                     ? 'At Trend Wood, we choose each board, understand its knots and respect its grain. The result? Works that are unlike anything on the market.'
                     : 'Bei Trend Wood wählen wir jedes Brett aus, verstehen seine Äste und respektieren seine Maserung. Das Ergebnis? Werke, die einzigartig auf dem Markt sind.'

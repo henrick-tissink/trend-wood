@@ -28,6 +28,10 @@ export async function ServicesPage({ locale }: Props) {
       description: t('list.flooring.description'),
     },
     {
+      title: t('list.terraces.title'),
+      description: t('list.terraces.description'),
+    },
+    {
       title: t('list.restoration.title'),
       description: t('list.restoration.description'),
     },
