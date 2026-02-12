@@ -49,7 +49,7 @@ export default async function Home({ params }: Props) {
 
           <Container className="relative z-10 text-center">
             <FadeIn duration={1}>
-              <div className="relative w-[320px] h-[160px] sm:w-[480px] sm:h-[240px] md:w-[600px] md:h-[300px] lg:w-[720px] lg:h-[360px] mx-auto mt-8 md:mt-12 mb-8 md:mb-12">
+              <div className="relative w-[320px] h-[160px] sm:w-[480px] sm:h-[240px] md:w-[600px] md:h-[300px] lg:w-[720px] lg:h-[360px] mx-auto mt-4 md:mt-6 mb-6 md:mb-8">
                 <Image
                   src="/images/logo.png"
                   alt="Trend Wood - Simte Lemnul - estd 2020"
@@ -73,7 +73,7 @@ export default async function Home({ params }: Props) {
             </FadeIn>
 
             <FadeIn delay={0.7} duration={0.8}>
-              <div className="mt-12">
+              <div className="mt-8 md:mt-10">
                 <Button href="/contact" size="large" variant="primary">
                   {tCommon('getInTouch')}
                 </Button>
