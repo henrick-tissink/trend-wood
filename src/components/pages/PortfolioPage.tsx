@@ -18,7 +18,7 @@ const projects = [
     slug: 'casa-utu',
     title: { ro: 'Casa Utu', en: 'Utu House', de: 'Utu Haus' },
     image: '/images/portfolio/casa-utu.jpg',
-    woodType: { ro: 'Brad masiv', en: 'Solid fir', de: 'Massive Tanne' },
+    woodType: { ro: 'Lemn rășinos', en: 'Resinous wood', de: 'Nadelholz' },
     featured: true,
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     slug: 'balcon-lemn',
     title: { ro: 'Balcon din lemn', en: 'Wooden Balcony', de: 'Holzbalkon' },
     image: '/images/portfolio/balcon.jpg',
-    woodType: { ro: 'Lemn masiv', en: 'Solid wood', de: 'Massivholz' },
+    woodType: { ro: 'Lemn rășinos', en: 'Resinous wood', de: 'Nadelholz' },
   },
   {
     slug: 'scara-casa-a',
