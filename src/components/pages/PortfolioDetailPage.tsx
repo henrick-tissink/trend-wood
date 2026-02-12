@@ -37,11 +37,17 @@ const projects: Record<
       de: 'Massivholzbau aus Tanne, mit Liebe zum Detail gefertigt. Ein Projekt, das zeigt, dass Tradition und moderner Komfort harmonisch inmitten der Natur koexistieren können.',
     },
     woodType: {
-      ro: 'Brad masiv',
-      en: 'Solid fir',
-      de: 'Massive Tanne',
+      ro: 'Lemn rășinos',
+      en: 'Resinous wood',
+      de: 'Nadelholz',
     },
-    images: ['/images/portfolio/casa-utu.jpg'],
+    images: [
+      '/images/portfolio/casa-utu/01.jpg',
+      '/images/portfolio/casa-utu/02.jpg',
+      '/images/portfolio/casa-utu/03.jpg',
+      '/images/portfolio/casa-utu/04.jpg',
+      '/images/portfolio/casa-utu/05.jpg',
+    ],
     details: {
       ro: [
         'Structură din lemn masiv de brad',
@@ -76,7 +82,13 @@ const projects: Record<
       en: 'Solid oak',
       de: 'Massiveiche',
     },
-    images: ['/images/portfolio/scara-emil.jpg'],
+    images: [
+      '/images/portfolio/scara-emil/01.jpg',
+      '/images/portfolio/scara-emil/02.jpg',
+      '/images/portfolio/scara-emil/03.jpg',
+      '/images/portfolio/scara-emil/04.jpg',
+      '/images/portfolio/scara-emil/05.jpg',
+    ],
     details: {
       ro: [
         'Trepte din stejar masiv cu curbură elegantă',
@@ -111,7 +123,13 @@ const projects: Record<
       en: 'Solid oak',
       de: 'Massiveiche',
     },
-    images: ['/images/portfolio/masa-stejar.jpg'],
+    images: [
+      '/images/portfolio/masa-stejar/01.jpg',
+      '/images/portfolio/masa-stejar/02.jpg',
+      '/images/portfolio/masa-stejar/03.jpg',
+      '/images/portfolio/masa-stejar/04.jpg',
+      '/images/portfolio/masa-stejar/05.jpg',
+    ],
     details: {
       ro: [
         'Blat masiv din stejar cu fibră vizibilă',
@@ -142,11 +160,16 @@ const projects: Record<
       de: 'Balkongeländer und -struktur aus Massivholz, harmonisch in die Hausarchitektur integriert. Behandeltes Holz gewährleistet Langlebigkeit und Ästhetik.',
     },
     woodType: {
-      ro: 'Lemn masiv',
-      en: 'Solid wood',
-      de: 'Massivholz',
+      ro: 'Lemn rășinos',
+      en: 'Resinous wood',
+      de: 'Nadelholz',
     },
-    images: ['/images/portfolio/balcon.jpg'],
+    images: [
+      '/images/portfolio/balcon/01.jpg',
+      '/images/portfolio/balcon/02.jpg',
+      '/images/portfolio/balcon/03.jpg',
+      '/images/portfolio/balcon/04.jpg',
+    ],
     details: {
       ro: [
         'Balustradă din lemn masiv tratat',
@@ -181,7 +204,13 @@ const projects: Record<
       en: 'Solid oak',
       de: 'Massiveiche',
     },
-    images: ['/images/portfolio/scara-casa-a.jpg'],
+    images: [
+      '/images/portfolio/scara-casa-a/01.jpg',
+      '/images/portfolio/scara-casa-a/02.jpg',
+      '/images/portfolio/scara-casa-a/03.jpg',
+      '/images/portfolio/scara-casa-a/04.jpg',
+      '/images/portfolio/scara-casa-a/05.jpg',
+    ],
     details: {
       ro: [
         'Trepte și contratrepte din stejar masiv',
@@ -268,6 +297,34 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
             </FadeIn>
           </Container>
         </section>
+
+        {/* Gallery */}
+        {project.images.length > 1 && (
+          <section className="py-section-lg md:py-section-xl bg-hover">
+            <Container>
+              <FadeIn>
+                <h2 className="font-display text-h2 text-charcoal mb-10 md:mb-12">
+                  {t('gallery')}
+                </h2>
+              </FadeIn>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                {project.images.map((image, i) => (
+                  <FadeIn key={i} delay={i * 0.1}>
+                    <div className="relative aspect-[4/3] overflow-hidden bg-border">
+                      <Image
+                        src={image}
+                        alt={`${project.title[locale]} - ${i + 1}`}
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-slow"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+                  </FadeIn>
+                ))}
+              </div>
+            </Container>
+          </section>
+        )}
 
         {/* Project Content */}
         <section className="py-section-lg md:py-section-xl bg-cream">
