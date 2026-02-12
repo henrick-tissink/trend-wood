@@ -18,8 +18,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     'scara-casa-a': 'House A Stairs',
   }
 
+  const descriptions: Record<string, string> = {
+    'casa-utu': 'Utu House residential project - premium quality terrace and outdoor wooden installations by Trend Wood Consult.',
+    'scara-emil': 'Emil custom interior staircase - elegant solid wood design, precision crafted by Trend Wood Consult masters.',
+    'masa-stejar': 'Solid oak wood table - high-quality artisan furniture, handcrafted by the Trend Wood Consult team.',
+    'balcon-lemn': 'Natural wood balcony - durable structure with exceptional aesthetics, a project by Trend Wood Consult.',
+    'scara-casa-a': 'House A interior staircase - modern and functional wood design, masterfully executed by Trend Wood Consult.',
+  }
+
   return {
     title: `${titles[slug] || slug} | Trend Wood`,
+    description: descriptions[slug] || 'Project from Trend Wood Consult portfolio - premium quality woodwork.',
   }
 }
 

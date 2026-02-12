@@ -29,6 +29,9 @@ export const pathnames = {
 
 export type Pathnames = typeof pathnames
 
+// Type for valid href values for the next-intl Link component
+export type AppPathname = keyof typeof pathnames
+
 // Utility to get the canonical path from a localized path
 export function getCanonicalPath(localizedPath: string, locale: Locale): string {
   for (const [canonical, paths] of Object.entries(pathnames)) {

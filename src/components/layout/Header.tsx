@@ -8,31 +8,8 @@ import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
 import { Link } from '@/lib/i18n/routing'
 import { cn } from '@/lib/utils'
 import { ease, duration } from '@/lib/animations'
+import { CONTACT, NAVIGATION } from '@/lib/constants'
 import type { Locale } from '@/lib/i18n/config'
-
-const navigationItems = {
-  ro: [
-    { name: 'Acasă', href: '/' },
-    { name: 'Despre Noi', href: '/despre-noi' },
-    { name: 'Servicii', href: '/servicii' },
-    { name: 'Portofoliu', href: '/portofoliu' },
-    { name: 'Contact', href: '/contact' },
-  ],
-  en: [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' },
-  ],
-  de: [
-    { name: 'Startseite', href: '/' },
-    { name: 'Über Uns', href: '/uber-uns' },
-    { name: 'Dienstleistungen', href: '/dienstleistungen' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Kontakt', href: '/kontakt' },
-  ],
-}
 
 interface HeaderProps {
   transparent?: boolean
@@ -43,7 +20,7 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  const navigation = navigationItems[locale] || navigationItems.ro
+  const navigation = NAVIGATION[locale] || NAVIGATION.ro
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,7 +94,7 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <Link
-                      href={item.href as any}
+                      href={item.href}
                       className={cn(
                         'relative text-body transition-colors duration-fast group',
                         isTransparent
@@ -248,7 +225,7 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
                       }}
                     >
                       <Link
-                        href={item.href as any}
+                        href={item.href}
                         className="block font-display text-h1 text-cream hover:text-cream/70 transition-colors duration-fast"
                         onClick={() => setMobileMenuOpen(false)}
                       >
@@ -261,7 +238,7 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
 
               {/* Contact info at bottom */}
               <motion.div
-                className="absolute bottom-12 left-0 right-0 text-center"
+                className="absolute bottom-12 left-0 right-0 flex flex-col items-center gap-3"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -271,12 +248,15 @@ export function Header({ transparent = false, locale = 'ro' }: HeaderProps) {
                   ease: ease.smooth,
                 }}
               >
-                <a
-                  href="tel:+40724533675"
-                  className="text-cream/60 hover:text-cream transition-colors duration-fast"
-                >
-                  0724 533 675
-                </a>
+                {CONTACT.phones.map((phone) => (
+                  <a
+                    key={phone.tel}
+                    href={`tel:${phone.tel}`}
+                    className="text-cream/60 hover:text-cream transition-colors duration-fast"
+                  >
+                    {phone.number} - {phone.name}
+                  </a>
+                ))}
               </motion.div>
             </div>
           </motion.div>

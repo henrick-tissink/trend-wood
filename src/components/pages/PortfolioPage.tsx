@@ -1,11 +1,11 @@
 import Image from 'next/image'
+import NextLink from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
-import { Link } from '@/lib/i18n/routing'
 import type { Locale } from '@/lib/i18n/config'
 
 type Props = {
@@ -51,8 +51,9 @@ export async function PortfolioPage({ locale }: Props) {
   const t = await getTranslations({ locale, namespace: 'portfolio' })
   const tCommon = await getTranslations({ locale, namespace: 'common' })
 
-  // Get portfolio path for the current locale
+  // Get portfolio path and locale prefix for URLs
   const portfolioPath = locale === 'ro' ? '/portofoliu' : '/portfolio'
+  const localePrefix = locale === 'ro' ? '' : `/${locale}`
 
   return (
     <>
@@ -83,8 +84,8 @@ export async function PortfolioPage({ locale }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
               {projects.map((project, i) => (
                 <FadeIn key={project.slug} delay={i * 0.08}>
-                  <Link
-                    href={`${portfolioPath}/${project.slug}` as any}
+                  <NextLink
+                    href={`${localePrefix}${portfolioPath}/${project.slug}`}
                     className={`group block ${
                       project.featured ? 'md:col-span-2' : ''
                     }`}
@@ -146,7 +147,7 @@ export async function PortfolioPage({ locale }: Props) {
                         {project.woodType[locale]}
                       </p>
                     </div>
-                  </Link>
+                  </NextLink>
                 </FadeIn>
               ))}
             </div>

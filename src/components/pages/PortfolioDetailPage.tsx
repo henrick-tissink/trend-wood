@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import NextLink from 'next/link'
 import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import { Header } from '@/components/layout/Header'
@@ -7,6 +8,7 @@ import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { Link } from '@/lib/i18n/routing'
+import { CONTACT } from '@/lib/constants'
 import type { Locale } from '@/lib/i18n/config'
 
 type Props = {
@@ -174,7 +176,7 @@ const projects: Record<
       ro: [
         'Balustradă din lemn masiv tratat',
         'Structură rezistentă la intemperii',
-        'Design tradițional adaptat modern',
+        'Design tradițional cu adaptare modernă',
       ],
       en: [
         'Treated solid wood railing',
@@ -264,6 +266,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
 
   const { prev, next } = getAdjacentProjects(slug, locale)
   const portfolioPath = locale === 'ro' ? '/portofoliu' : '/portfolio'
+  const localePrefix = locale === 'ro' ? '' : `/${locale}`
 
   return (
     <>
@@ -336,7 +339,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                 <FadeIn>
                   <nav className="mb-12">
                     <Link
-                      href={portfolioPath as any}
+                      href="/portofoliu"
                       className="inline-flex items-center gap-2 text-stone hover:text-forest transition-colors duration-fast group"
                     >
                       <svg
@@ -344,6 +347,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -409,10 +413,10 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                         }
                       </p>
                       <a
-                        href="tel:+40724533675"
+                        href={`tel:${CONTACT.phones[1].tel}`}
                         className="text-charcoal font-display text-h4 hover:text-forest transition-colors duration-fast"
                       >
-                        0724 533 675
+                        {CONTACT.phones[1].number}
                       </a>
                     </div>
                   </div>
@@ -426,8 +430,8 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
         <section className="border-t border-border">
           <div className="grid grid-cols-2">
             {/* Previous */}
-            <Link
-              href={`${portfolioPath}/${prev.slug}` as any}
+            <NextLink
+              href={`${localePrefix}${portfolioPath}/${prev.slug}`}
               className="group relative py-12 md:py-16 px-6 md:px-12 hover:bg-hover transition-colors duration-medium"
             >
               <div className="max-w-md">
@@ -437,6 +441,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -456,11 +461,11 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                   {prev.title}
                 </h3>
               </div>
-            </Link>
+            </NextLink>
 
             {/* Next */}
-            <Link
-              href={`${portfolioPath}/${next.slug}` as any}
+            <NextLink
+              href={`${localePrefix}${portfolioPath}/${next.slug}`}
               className="group relative py-12 md:py-16 px-6 md:px-12 text-right border-l border-border hover:bg-hover transition-colors duration-medium"
             >
               <div className="max-w-md ml-auto">
@@ -476,6 +481,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -489,7 +495,7 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
                   {next.title}
                 </h3>
               </div>
-            </Link>
+            </NextLink>
           </div>
         </section>
       </main>

@@ -11,11 +11,11 @@ const contactSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const data = contactSchema.parse(body);
 
-    // For now, log the submission
+    // For now, the submission is validated but not persisted
     // In production, this would send an email or store in a database
-    console.log("Contact form submission:", data);
 
     // TODO: Integrate with email service (Resend, SendGrid, etc.)
     // await sendEmail({

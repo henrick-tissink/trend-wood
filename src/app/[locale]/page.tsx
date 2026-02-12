@@ -1,11 +1,11 @@
 import Image from 'next/image'
+import NextLink from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
-import { Link } from '@/lib/i18n/routing'
 import type { Locale } from '@/lib/i18n/config'
 
 type Props = {
@@ -89,6 +89,7 @@ export default async function Home({ params }: Props) {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -145,24 +146,27 @@ export default async function Home({ params }: Props) {
                   src: '/images/portfolio/scara-emil.jpg',
                   title: locale === 'ro' ? 'Scară interioară Emil' : locale === 'en' ? 'Emil Interior Stairs' : 'Emil Innentreppe',
                   subtitle: locale === 'ro' ? 'Stejar masiv' : locale === 'en' ? 'Solid oak' : 'Massiveiche',
-                  href: `${portfolioPath}/scara-emil`,
+                  slug: 'scara-emil',
                 },
                 {
                   src: '/images/portfolio/masa-stejar.jpg',
                   title: locale === 'ro' ? 'Masă din stejar' : locale === 'en' ? 'Oak Table' : 'Eichentisch',
                   subtitle: locale === 'ro' ? 'Stejar masiv' : locale === 'en' ? 'Solid oak' : 'Massiveiche',
-                  href: `${portfolioPath}/masa-stejar`,
+                  slug: 'masa-stejar',
                 },
                 {
                   src: '/images/portfolio/scara-casa-a.jpg',
                   title: locale === 'ro' ? 'Scară Casa A' : locale === 'en' ? 'House A Stairs' : 'Haus A Treppe',
                   subtitle: locale === 'ro' ? 'Stejar masiv' : locale === 'en' ? 'Solid oak' : 'Massiveiche',
-                  href: `${portfolioPath}/scara-casa-a`,
+                  slug: 'scara-casa-a',
                 },
-              ].map((work, i) => (
+              ].map((work, i) => {
+                // Build href with locale prefix only for non-default locales
+                const localePrefix = locale === 'ro' ? '' : `/${locale}`
+                return (
                 <FadeIn key={i} delay={i * 0.1}>
-                  <Link
-                    href={work.href as any}
+                  <NextLink
+                    href={`${localePrefix}${portfolioPath}/${work.slug}`}
                     className="group relative aspect-[4/3] block overflow-hidden bg-border"
                   >
                     <Image
@@ -177,14 +181,15 @@ export default async function Home({ params }: Props) {
                       <p className="text-small text-cream/70 mb-1">{work.subtitle}</p>
                       <h3 className="font-display text-h3 text-cream">{work.title}</h3>
                     </div>
-                  </Link>
+                  </NextLink>
                 </FadeIn>
-              ))}
+                )
+              })}
             </div>
 
             <FadeIn delay={0.3}>
               <div className="mt-16 text-center">
-                <Button href={portfolioPath as any} variant="secondary">
+                <Button href="/portofoliu" variant="secondary">
                   {tCommon('viewAll')}
                 </Button>
               </div>
@@ -199,6 +204,7 @@ export default async function Home({ params }: Props) {
               className="w-32 h-32 md:w-48 md:h-48"
               fill="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
