@@ -36,7 +36,7 @@ export const CONTACT = {
     { number: '0731 491 811', name: 'Utu', tel: '+40731491811' },
     { number: '0724 533 675', name: 'Ioana', tel: '+40724533675' },
   ],
-  email: 'trendwoodconsult@gmail.com',
+  email: 'info@trendwood.ro',
   whatsapp: '+40724533675',
   location: {
     ro: 'Ciolpani, Ilfov, România',

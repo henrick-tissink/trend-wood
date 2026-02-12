@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 
     // TODO: Integrate with email service (Resend, SendGrid, etc.)
     // await sendEmail({
-    //   to: "trendwoodconsult@gmail.com",
+    //   to: "info@trendwood.ro",
     //   subject: `Mesaj nou de la ${data.name}`,
     //   body: `
     //     Nume: ${data.name}
