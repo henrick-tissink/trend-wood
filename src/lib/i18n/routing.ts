@@ -6,6 +6,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix: 'as-needed', // No prefix for default locale (Romanian)
+  localeDetection: false, // Don't auto-detect browser language - always default to Romanian
   pathnames,
 })
 
