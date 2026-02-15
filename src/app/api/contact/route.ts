@@ -31,7 +31,7 @@ interface EmailFields {
 }
 
 function buildContactEmailHtml(fields: EmailFields): string {
-  const preheader = `Neue Nachricht von ${fields.name}`;
+  const preheader = `Mesaj nou de la ${fields.name}`;
 
   const row = (label: string, content: string) => `
     <tr>
@@ -48,13 +48,13 @@ function buildContactEmailHtml(fields: EmailFields): string {
     `<a href="${href}" style="font-size:15px;color:#15803d;text-decoration:none;">${v}</a>`;
 
   const contactRows = [
-    row("Name", textValue(fields.name)),
+    row("Nume", textValue(fields.name)),
     row("Email", linkValue(`mailto:${fields.email}`, fields.email)),
     fields.phone ? row("Telefon", linkValue(`tel:${fields.phone}`, fields.phone)) : "",
   ].join("");
 
   return `<!DOCTYPE html>
-<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ro" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -69,7 +69,7 @@ function buildContactEmailHtml(fields: EmailFields): string {
         <!-- Header -->
         <tr>
           <td style="background-color:#15803d;padding:24px 32px;">
-            <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;font-family:Arial,Helvetica,sans-serif;">Neue Kontaktanfrage</h1>
+            <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;font-family:Arial,Helvetica,sans-serif;">Cerere nouă de contact</h1>
           </td>
         </tr>
         <!-- Contact details -->
@@ -83,7 +83,7 @@ function buildContactEmailHtml(fields: EmailFields): string {
         <!-- Message body -->
         <tr>
           <td style="padding:24px 32px;">
-            <span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#737373;margin-bottom:8px;">Nachricht</span>
+            <span style="display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#737373;margin-bottom:8px;">Mesaj</span>
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td style="background-color:#f5f5f5;border-radius:6px;padding:16px;font-size:15px;line-height:1.6;color:#171717;">
@@ -99,7 +99,7 @@ function buildContactEmailHtml(fields: EmailFields): string {
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td style="background-color:#15803d;border-radius:6px;text-align:center;">
-                  <a href="mailto:${fields.email}" style="display:inline-block;padding:12px 28px;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Antworten</a>
+                  <a href="mailto:${fields.email}" style="display:inline-block;padding:12px 28px;font-size:14px;font-weight:600;color:#ffffff;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Răspunde</a>
                 </td>
               </tr>
             </table>
@@ -108,7 +108,7 @@ function buildContactEmailHtml(fields: EmailFields): string {
         <!-- Footer -->
         <tr>
           <td style="background-color:#f5f5f5;padding:16px 32px;text-align:center;">
-            <span style="font-size:12px;color:#737373;">Gesendet über das Kontaktformular &mdash; Trend Wood Consult</span>
+            <span style="font-size:12px;color:#737373;">Trimis prin formularul de contact &mdash; Trend Wood Consult</span>
           </td>
         </tr>
       </table>
@@ -134,7 +134,7 @@ export async function POST(request: NextRequest) {
       from: `Trend Wood Consult <${from}>`,
       to,
       replyTo: data.email,
-      subject: `Neue Nachricht von ${data.name}`,
+      subject: `Mesaj nou de la ${data.name}`,
       html: buildContactEmailHtml({
         name: data.name,
         email: data.email,
@@ -146,13 +146,13 @@ export async function POST(request: NextRequest) {
     if (sendError || !sendResult?.id) {
       console.error("Resend error:", sendError ?? "No email ID returned");
       return NextResponse.json(
-        { success: false, message: "Fehler beim Senden der Nachricht." },
+        { success: false, message: "A apărut o eroare la trimiterea mesajului." },
         { status: 500 }
       );
     }
 
     return NextResponse.json(
-      { success: true, message: "Nachricht erfolgreich gesendet." },
+      { success: true, message: "Mesajul a fost trimis cu succes." },
       { status: 200 }
     );
   } catch (error) {
@@ -165,7 +165,7 @@ export async function POST(request: NextRequest) {
 
     console.error("Contact form error:", error);
     return NextResponse.json(
-      { success: false, message: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut." },
+      { success: false, message: "A apărut o eroare. Vă rugăm să încercați din nou." },
       { status: 500 }
     );
   }
