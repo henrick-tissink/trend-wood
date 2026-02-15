@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
+    metadataBase: new URL("https://trendwood.ro"),
     title: titles[locale as Locale] || titles.ro,
     description: descriptions[locale as Locale] || descriptions.ro,
     keywords: [
