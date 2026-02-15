@@ -11,6 +11,6 @@ export const config = {
   // - /studio (Sanity Studio)
   // - Static files (images, fonts, etc.)
   matcher: [
-    '/((?!api|_next|_vercel|studio|.*\\..*).*)',
+    '/((?!api|_next|_vercel|studio|opengraph-image|twitter-image|.*\\..*).*)',
   ],
 }
