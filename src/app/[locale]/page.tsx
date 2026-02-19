@@ -143,10 +143,10 @@ export default async function Home({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {[
                 {
-                  src: '/images/portfolio/scara-emil.jpg',
-                  title: locale === 'ro' ? 'Scară interioară Emil' : locale === 'en' ? 'Emil Interior Stairs' : 'Emil Innentreppe',
+                  src: '/images/portfolio/scari-lemn-masiv.jpg',
+                  title: locale === 'ro' ? 'Scări lemn masiv' : locale === 'en' ? 'Solid Wood Stairs' : 'Massivholztreppe',
                   subtitle: locale === 'ro' ? 'Stejar masiv' : locale === 'en' ? 'Solid oak' : 'Massiveiche',
-                  slug: 'scara-emil',
+                  slug: 'scari-lemn-masiv',
                 },
                 {
                   src: '/images/portfolio/masa-stejar.jpg',
@@ -155,10 +155,10 @@ export default async function Home({ params }: Props) {
                   slug: 'masa-stejar',
                 },
                 {
-                  src: '/images/portfolio/scara-casa-a.jpg',
-                  title: locale === 'ro' ? 'Scară Casa A' : locale === 'en' ? 'House A Stairs' : 'Haus A Treppe',
+                  src: '/images/portfolio/placari-lemn-masiv.jpg',
+                  title: locale === 'ro' ? 'Placări lemn masiv' : locale === 'en' ? 'Solid Wood Cladding' : 'Massivholzverkleidung',
                   subtitle: locale === 'ro' ? 'Stejar masiv' : locale === 'en' ? 'Solid oak' : 'Massiveiche',
-                  slug: 'scara-casa-a',
+                  slug: 'placari-lemn-masiv',
                 },
               ].map((work, i) => {
                 // Build href with locale prefix only for non-default locales
@@ -225,7 +225,7 @@ export default async function Home({ params }: Props) {
               <FadeIn delay={0.15}>
                 <div className="mt-10">
                   <p className="text-cream font-medium">
-                    {locale === 'ro' ? 'Familie din Cluj' : locale === 'en' ? 'Family from Cluj' : 'Familie aus Cluj'}
+                    {locale === 'ro' ? 'Familie din București' : locale === 'en' ? 'Family from Bucharest' : 'Familie aus Bukarest'}
                   </p>
                   <p className="text-cream/50 text-small mt-1">
                     {locale === 'ro'

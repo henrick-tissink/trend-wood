@@ -58,11 +58,11 @@
     "values": {
       "craftsmanship": {
         "title": "Authentische Handwerkskunst",
-        "description": "Jedes Stück wird von Hand geschnitzt, mit Techniken, die über Generationen vererbt und perfektioniert wurden."
+        "description": "Jedes Stück wird von Hand gefertigt, mit Techniken, die über Generationen vererbt und perfektioniert wurden."
       },
       "materials": {
         "title": "Premium-Materialien",
-        "description": "Wir wählen nur das hochwertigste Holz aus den Wäldern Siebenbürgens."
+        "description": "Wir wählen nur Holz von höchster Qualität."
       },
       "legacy": {
         "title": "Langlebigkeit",
@@ -118,7 +118,7 @@
       },
       "restoration": {
         "title": "Restaurierungen",
-        "description": "Wir erwecken alte Möbelstücke und traditionelle Holzhäuser zu neuem Leben und bewahren dabei ihren Charakter und ihre Geschichte. Wir verwenden sowohl Originalholz als auch neues Holz nach Ihrer Vorstellung."
+        "description": "Wir erwecken traditionelle Holzhäuser zu neuem Leben und bewahren dabei ihren Charakter und ihre Geschichte. Wir verwenden sowohl Originalholz als auch neues Holz nach Ihrer Vorstellung."
       }
     },
     "process": {

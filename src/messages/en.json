@@ -58,11 +58,11 @@
     "values": {
       "craftsmanship": {
         "title": "Authentic Craftsmanship",
-        "description": "Each piece is hand-carved using techniques inherited and perfected over generations."
+        "description": "Each piece is handcrafted using techniques inherited and perfected over generations."
       },
       "materials": {
         "title": "Premium Materials",
-        "description": "We select only the highest quality wood from the forests of Transylvania."
+        "description": "We select only the highest quality wood."
       },
       "legacy": {
         "title": "Durability",
@@ -118,7 +118,7 @@
       },
       "restoration": {
         "title": "Restorations",
-        "description": "We bring old furniture pieces and traditional wooden houses back to life, preserving their character and story. We use both original and new wood according to your vision."
+        "description": "We bring traditional wooden houses back to life, preserving their character and story. We use both original and new wood according to your vision."
       }
     },
     "process": {

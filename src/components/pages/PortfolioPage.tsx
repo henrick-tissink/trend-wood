@@ -22,9 +22,9 @@ const projects = [
     featured: true,
   },
   {
-    slug: 'scara-emil',
-    title: { ro: 'Scară interioară Emil', en: 'Emil Interior Stairs', de: 'Emil Innentreppe' },
-    image: '/images/portfolio/scara-emil.jpg',
+    slug: 'scari-lemn-masiv',
+    title: { ro: 'Scări lemn masiv', en: 'Solid Wood Stairs', de: 'Massivholztreppe' },
+    image: '/images/portfolio/scari-lemn-masiv.jpg',
     woodType: { ro: 'Stejar masiv', en: 'Solid oak', de: 'Massiveiche' },
   },
   {
@@ -40,9 +40,21 @@ const projects = [
     woodType: { ro: 'Lemn rășinos', en: 'Resinous wood', de: 'Nadelholz' },
   },
   {
-    slug: 'scara-casa-a',
-    title: { ro: 'Scară Casa A', en: 'House A Stairs', de: 'Haus A Treppe' },
-    image: '/images/portfolio/scara-casa-a.jpg',
+    slug: 'gard-lemn-rasinos',
+    title: { ro: 'Gard din lemn rășinos', en: 'Resinous Wood Fence', de: 'Nadelholzzaun' },
+    image: '/images/portfolio/gard-lemn-rasinos.jpg',
+    woodType: { ro: 'Lemn rășinos', en: 'Resinous wood', de: 'Nadelholz' },
+  },
+  {
+    slug: 'mobilier-lemn-masiv',
+    title: { ro: 'Mobilier din lemn masiv', en: 'Solid Wood Furniture', de: 'Massivholzmöbel' },
+    image: '/images/portfolio/mobilier-lemn-masiv.jpg',
+    woodType: { ro: 'Stejar masiv', en: 'Solid oak', de: 'Massiveiche' },
+  },
+  {
+    slug: 'placari-lemn-masiv',
+    title: { ro: 'Placări lemn masiv', en: 'Solid Wood Cladding', de: 'Massivholzverkleidung' },
+    image: '/images/portfolio/placari-lemn-masiv.jpg',
     woodType: { ro: 'Stejar masiv', en: 'Solid oak', de: 'Massiveiche' },
   },
 ]

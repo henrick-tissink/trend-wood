@@ -58,11 +58,11 @@
     "values": {
       "craftsmanship": {
         "title": "Meșteșug Autentic",
-        "description": "Fiecare piesă este sculptată manual, cu tehnici moștenite și perfecționate de-a lungul generațiilor."
+        "description": "Fiecare piesă este lucrată manual, cu tehnici moștenite și perfecționate de-a lungul generațiilor."
       },
       "materials": {
         "title": "Materiale Premium",
-        "description": "Selectăm doar lemn de cea mai înaltă calitate din pădurile Transilvaniei."
+        "description": "Selectăm doar lemn de cea mai înaltă calitate."
       },
       "legacy": {
         "title": "Durabilitate",
@@ -118,7 +118,7 @@
       },
       "restoration": {
         "title": "Restaurări",
-        "description": "Readucem la viață piese de mobilier vechi și case țărănești din lemn, păstrând caracterul și povestea lor. Folosim atât lemnul original cât și lemn nou, conform viziunii dumneavoastră."
+        "description": "Readucem la viață case țărănești din lemn, păstrând caracterul și povestea lor. Folosim atât lemnul original cât și lemn nou, conform viziunii dumneavoastră."
       }
     },
     "process": {

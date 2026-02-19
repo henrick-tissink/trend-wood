@@ -54,10 +54,10 @@ export async function AboutPage({ locale }: Props) {
                   <FadeIn delay={0.1}>
                     <p>
                       {locale === 'ro'
-                        ? 'Ideea pentru Trend Wood a apărut în 2020 din cauza lipsei de seriozitate de pe piață în ceea ce privește calitatea produsului finit pentru mobilierul din lemn masiv.'
+                        ? 'Ideea pentru Trend Wood a apărut în 2020 dintr-o veche pasiune și dorința de a ridica standardele de calitate pentru mobilierul din lemn masiv.'
                         : locale === 'en'
-                        ? 'The idea for Trend Wood emerged in 2020 due to the lack of seriousness on the market regarding the quality of the finished product for solid wood furniture.'
-                        : 'Die Idee für Trend Wood entstand 2020 aufgrund des Mangels an Ernsthaftigkeit auf dem Markt in Bezug auf die Qualität des fertigen Produkts für Massivholzmöbel.'
+                        ? 'The idea for Trend Wood emerged in 2020 from a long-standing passion and the desire to raise quality standards for solid wood furniture.'
+                        : 'Die Idee für Trend Wood entstand 2020 aus einer langjährigen Leidenschaft und dem Wunsch, die Qualitätsstandards für Massivholzmöbel zu erhöhen.'
                       }
                     </p>
                   </FadeIn>
@@ -166,10 +166,10 @@ export async function AboutPage({ locale }: Props) {
                   <FadeIn delay={0.15}>
                     <p>
                       {locale === 'ro'
-                        ? 'Rezultatul? Lucrări care nu seamănă cu nimic de pe piață. Dacă căutați unicitate și o execuție care va sfida timpul, ați ajuns unde trebuie.'
+                        ? 'Rezultatul? Lucrări unice, cu o execuție care va sfida timpul.'
                         : locale === 'en'
-                        ? 'The result? Works that are unlike anything on the market. If you are looking for uniqueness and execution that will defy time, you have come to the right place.'
-                        : 'Das Ergebnis? Werke, die einzigartig auf dem Markt sind. Wenn Sie Einzigartigkeit und eine Ausführung suchen, die der Zeit trotzt, sind Sie hier richtig.'
+                        ? 'The result? Unique works, with execution that will defy time.'
+                        : 'Das Ergebnis? Einzigartige Werke, mit einer Ausführung, die der Zeit trotzen wird.'
                       }
                     </p>
                   </FadeIn>
