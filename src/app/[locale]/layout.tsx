@@ -4,7 +4,10 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { playfair, sourceSans } from '@/lib/fonts'
 import { locales, type Locale } from '@/lib/i18n/config'
+import { OrganizationJsonLd, LocalBusinessJsonLd, WebsiteJsonLd } from '@/components/seo/JsonLd'
 import '../globals.css'
+
+const BASE_URL = 'https://trendwood.ro'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -30,8 +33,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     de: 'Massivholzmöbel, gefertigt mit siebenbürgischer Präzision und Leidenschaft für Details. Jedes Stück ist ein einzigartiges Kunstwerk.',
   }
 
+  const getLocalePath = (loc: Locale) => (loc === 'ro' ? '' : `/${loc}`)
+
   return {
-    metadataBase: new URL("https://trendwood.ro"),
+    metadataBase: new URL(BASE_URL),
     title: titles[locale as Locale] || titles.ro,
     description: descriptions[locale as Locale] || descriptions.ro,
     keywords: [
@@ -44,11 +49,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'Trend Wood',
     ],
     authors: [{ name: 'Trend Wood Consult' }],
+    alternates: {
+      canonical: `${BASE_URL}${getLocalePath(locale as Locale)}/`,
+      languages: {
+        'ro': `${BASE_URL}/`,
+        'en': `${BASE_URL}/en/`,
+        'de': `${BASE_URL}/de/`,
+        'x-default': `${BASE_URL}/`,
+      },
+    },
     openGraph: {
       title: titles[locale as Locale] || titles.ro,
       description: descriptions[locale as Locale] || descriptions.ro,
       locale: locale === 'ro' ? 'ro_RO' : locale === 'en' ? 'en_US' : 'de_DE',
+      alternateLocale: ['ro_RO', 'en_US', 'de_DE'].filter(
+        l => l !== (locale === 'ro' ? 'ro_RO' : locale === 'en' ? 'en_US' : 'de_DE')
+      ),
       type: 'website',
+      siteName: 'Trend Wood Consult',
+      url: `${BASE_URL}${getLocalePath(locale as Locale)}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[locale as Locale] || titles.ro,
+      description: descriptions[locale as Locale] || descriptions.ro,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   }
 }
@@ -69,6 +104,11 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`${playfair.variable} ${sourceSans.variable}`}>
+      <head>
+        <OrganizationJsonLd />
+        <LocalBusinessJsonLd locale={locale as Locale} />
+        <WebsiteJsonLd />
+      </head>
       <body className="font-body text-charcoal bg-cream antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
