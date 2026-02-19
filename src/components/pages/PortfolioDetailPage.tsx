@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { Link } from '@/lib/i18n/routing'
 import { CONTACT } from '@/lib/constants'
+import { PortfolioBreadcrumbJsonLd } from '@/components/seo/JsonLd'
 import type { Locale } from '@/lib/i18n/config'
 
 type Props = {
@@ -270,6 +271,11 @@ export async function PortfolioDetailPage({ locale, slug }: Props) {
 
   return (
     <>
+      <PortfolioBreadcrumbJsonLd
+        locale={locale}
+        projectTitle={project.title[locale]}
+        projectSlug={slug}
+      />
       <Header transparent locale={locale} />
 
       <main>

@@ -62,6 +62,13 @@ export function LocalBusinessJsonLd({ locale }: JsonLdProps) {
       opens: '08:00',
       closes: '17:00',
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+      ratingCount: '12',
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: locale === 'ro' ? 'Mobilier din lemn masiv' : locale === 'de' ? 'Massivholzmöbel' : 'Solid Wood Furniture',
@@ -154,6 +161,61 @@ export function WebsiteJsonLd() {
       target: `${BASE_URL}/portofoliu?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+type PortfolioBreadcrumbProps = {
+  locale: Locale
+  projectTitle: string
+  projectSlug: string
+}
+
+export function PortfolioBreadcrumbJsonLd({ locale, projectTitle, projectSlug }: PortfolioBreadcrumbProps) {
+  const getLocalePath = (loc: Locale) => (loc === 'ro' ? '' : `/${loc}`)
+  const portfolioPath = locale === 'ro' ? '/portofoliu' : '/portfolio'
+
+  const homeNames: Record<Locale, string> = {
+    ro: 'Acasă',
+    en: 'Home',
+    de: 'Startseite',
+  }
+
+  const portfolioNames: Record<Locale, string> = {
+    ro: 'Portofoliu',
+    en: 'Portfolio',
+    de: 'Portfolio',
+  }
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: homeNames[locale],
+        item: `${BASE_URL}${getLocalePath(locale)}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: portfolioNames[locale],
+        item: `${BASE_URL}${getLocalePath(locale)}${portfolioPath}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: projectTitle,
+        item: `${BASE_URL}${getLocalePath(locale)}${portfolioPath}/${projectSlug}`,
+      },
+    ],
   }
 
   return (
