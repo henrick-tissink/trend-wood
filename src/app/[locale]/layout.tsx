@@ -39,6 +39,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     metadataBase: new URL(BASE_URL),
     title: titles[locale as Locale] || titles.ro,
     description: descriptions[locale as Locale] || descriptions.ro,
+    icons: {
+      icon: [
+        { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+    },
     keywords: [
       'mobilier lemn masiv',
       'solid wood furniture',
