@@ -41,8 +41,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: descriptions[locale as Locale] || descriptions.ro,
     icons: {
       icon: [
-        { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+        { url: '/icon-48.png', sizes: '48x48', type: 'image/png' },
+        { url: '/icon-96.png', sizes: '96x96', type: 'image/png' },
         { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+        { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
       ],
       shortcut: '/favicon.ico',
       apple: [
