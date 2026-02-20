@@ -119,6 +119,10 @@
       "restoration": {
         "title": "Restaurierungen",
         "description": "Wir erwecken traditionelle Holzhäuser zu neuem Leben und bewahren dabei ihren Charakter und ihre Geschichte. Wir verwenden sowohl Originalholz als auch neues Holz nach Ihrer Vorstellung."
+      },
+      "cladding": {
+        "title": "Holzverkleidung",
+        "description": "Antikisierte Massivholzverkleidung aus Eiche, individuell für Ihre Räume angepasst. Oberflächen nach Kundenwunsch."
       }
     },
     "process": {

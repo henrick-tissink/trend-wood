@@ -35,9 +35,9 @@ const projects: Record<
       de: 'Utu Haus',
     },
     description: {
-      ro: 'Construcție din lemn masiv de brad, realizată cu atenție la fiecare detaliu. Un proiect care demonstrează că tradiția și confortul modern pot coexista armonios în mijlocul naturii.',
-      en: 'Solid fir wood construction, crafted with attention to every detail. A project that demonstrates that tradition and modern comfort can coexist harmoniously in the midst of nature.',
-      de: 'Massivholzbau aus Tanne, mit Liebe zum Detail gefertigt. Ein Projekt, das zeigt, dass Tradition und moderner Komfort harmonisch inmitten der Natur koexistieren können.',
+      ro: 'Construcție din lemn vechi masiv de brad, realizată cu atenție la fiecare detaliu. Un proiect care demonstrează că tradiția și confortul modern pot coexista armonios în mijlocul naturii.',
+      en: 'Old solid fir wood construction, crafted with attention to every detail. A project that demonstrates that tradition and modern comfort can coexist harmoniously in the midst of nature.',
+      de: 'Bau aus altem massivem Tannenholz, mit Liebe zum Detail gefertigt. Ein Projekt, das zeigt, dass Tradition und moderner Komfort harmonisch inmitten der Natur koexistieren können.',
     },
     woodType: {
       ro: 'Lemn rășinos',
@@ -322,17 +322,17 @@ const projects: Record<
     ],
     details: {
       ro: [
-        'Placări din lemn masiv de stejar',
+        'Placări din lemn masiv de stejar antichizat',
         'Finisaje personalizate conform solicitărilor',
         'Montaj profesional la fața locului',
       ],
       en: [
-        'Solid oak wood cladding',
+        'Antiqued solid oak wood cladding',
         'Custom finishes according to requirements',
         'Professional on-site installation',
       ],
       de: [
-        'Verkleidung aus massiver Eiche',
+        'Verkleidung aus antikisierter massiver Eiche',
         'Individuelle Oberflächen nach Anforderung',
         'Professionelle Montage vor Ort',
       ],

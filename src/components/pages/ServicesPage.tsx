@@ -35,6 +35,10 @@ export async function ServicesPage({ locale }: Props) {
       title: t('list.restoration.title'),
       description: t('list.restoration.description'),
     },
+    {
+      title: t('list.cladding.title'),
+      description: t('list.cladding.description'),
+    },
   ]
 
   const processSteps = [
